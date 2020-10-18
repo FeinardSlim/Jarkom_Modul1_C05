@@ -82,19 +82,27 @@ Langkah-langkah:
  
  ![image](https://user-images.githubusercontent.com/61129358/96362714-75bcc880-1159-11eb-8d90-3fdd6c5f5059.png)
  
- * Langkah 2
+ * Kemudian didapatkan streamnya, diganti menjadi raw dan disimpan sesuai ekstensinya
  
- ![image](https://user-images.githubusercontent.com/61129358/96362753-bfa5ae80-1159-11eb-8d83-ff1e987af8f7.png)
+ ![image](https://user-images.githubusercontent.com/58687783/96363711-072f3900-1160-11eb-9b26-eb9fdc9a8a3b.png)
  
- * Langkah 3
+ * Kemudian dibuka filenya dan untuk file pdf diperlukan password.
  
 ![image](https://user-images.githubusercontent.com/61129358/96362778-e237c780-1159-11eb-8161-dc70263bbbbd.png)
+ 
+ * Untuk pencarian zipkey dilakukan ftp-data dan kemudian dicari string zipkey. Maka ditemukan packet yang dimaksud dan dilakukan follow TCP stream
+ 
+ ![image](https://user-images.githubusercontent.com/61129358/96362753-bfa5ae80-1159-11eb-8d83-ff1e987af8f7.png)
 
- * Langkah 4
+ * Maka didapatkan passwordnya dan tinggal dimasukan kedalam pdf yang ada didalam zip sebelumnya
+ 
+   ![image](https://user-images.githubusercontent.com/58687783/96363794-93416080-1160-11eb-9a23-6693471dac5e.png)
+   
+ * Dan hasil dari pdf tersebut
  
  ![image](https://user-images.githubusercontent.com/61129358/96362785-ee238980-1159-11eb-9142-21d64582562a.png)
  
-    7. Untuk no 7 digunakan frame contains “Yes.pdf” && ftp-data. Kemudian dilakukan follow tcp stream. Setelah didapatkan datanya, diubah menjadi raw dan disimpan sesuai dengan extensinya. Kemudian tinggal dibuka file didalamnya yang bernama Yes.pdf
+   7. Untuk no 7 digunakan frame contains “Yes.pdf” && ftp-data. Kemudian dilakukan follow tcp stream. Setelah didapatkan datanya, diubah menjadi raw dan disimpan sesuai dengan extensinya. Kemudian tinggal dibuka file didalamnya yang bernama Yes.pdf
    
    ![9a](https://user-images.githubusercontent.com/58687783/96363022-d816c880-115b-11eb-8443-51cc39e1c0c2.png)
    
