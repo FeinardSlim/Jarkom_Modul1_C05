@@ -95,18 +95,27 @@ Langkah-langkah:
  
  ![image](https://user-images.githubusercontent.com/61129358/96362714-75bcc880-1159-11eb-8d90-3fdd6c5f5059.png)
  
- * Langkah 2
+ * Kemudian didapatkan streamnya, diganti menjadi raw dan disimpan sesuai ekstensinya
  
- ![image](https://user-images.githubusercontent.com/61129358/96362753-bfa5ae80-1159-11eb-8d83-ff1e987af8f7.png)
+ ![image](https://user-images.githubusercontent.com/58687783/96363711-072f3900-1160-11eb-9b26-eb9fdc9a8a3b.png)
  
- * Langkah 3
+ * Kemudian dibuka filenya dan untuk file pdf diperlukan password.
  
 ![image](https://user-images.githubusercontent.com/61129358/96362778-e237c780-1159-11eb-8161-dc70263bbbbd.png)
+ 
+ * Untuk pencarian zipkey dilakukan ftp-data dan kemudian dicari string zipkey. Maka ditemukan packet yang dimaksud dan dilakukan follow TCP stream
+ 
+ ![image](https://user-images.githubusercontent.com/61129358/96362753-bfa5ae80-1159-11eb-8d83-ff1e987af8f7.png)
 
- * Langkah 4
+ * Maka didapatkan passwordnya dan tinggal dimasukan kedalam pdf yang ada didalam zip sebelumnya
+ 
+   ![image](https://user-images.githubusercontent.com/58687783/96363794-93416080-1160-11eb-9a23-6693471dac5e.png)
+   
+ * Dan hasil dari pdf tersebut
  
  ![image](https://user-images.githubusercontent.com/61129358/96362785-ee238980-1159-11eb-9142-21d64582562a.png)
  
+
    7. Langkah-langkah:
    * Untuk no 7 digunakan frame contains “Yes.pdf” && ftp-data
     
@@ -126,19 +135,17 @@ Langkah-langkah:
    
  
  8. Langkah-langkah:
- * Buka file PCAP dengan wireshark, lalu masukkan Wireshark Filter Expression: ftp.request.command == RETR pada display filter
- 
-![image](https://user-images.githubusercontent.com/61129358/96362820-3e025080-115a-11eb-8b51-6edf7aec9076.png)
- 
- * Langkah 2
- 
-![image](https://user-images.githubusercontent.com/61129358/96362822-4195d780-115a-11eb-880a-36e8f32d0b93.png)
- 
- * Langkah 3
- 
-![image](https://user-images.githubusercontent.com/61129358/96362824-45295e80-115a-11eb-96fa-116f2d3e6f24.png)
-   
-
+  * Langkah pertama dengan mencari apa itu IP dari Microsoft FTP Service. Pertama dicari dengan command ftp contains "Microsoft"
+  
+  ![image](https://user-images.githubusercontent.com/58687783/96363899-3f834700-1161-11eb-9983-51a10888fa2a.png)
+  
+  * Kemudian tinggal digunakan ftp.request.command == RETR dan dengan ip.addr dengan ip yang telah didapat dari pencarian sebelumnya. Setelah itu kita follow TCP streamnya
+  
+  ![image](https://user-images.githubusercontent.com/58687783/96363928-896c2d00-1161-11eb-8a96-07e70b0618ce.png)
+  
+  * Setelah itu kita bisa dapat command apa saja yang digunakan
+  
+  ![image](https://user-images.githubusercontent.com/58687783/96363938-b3bdea80-1161-11eb-908d-3f2f9b579cc5.png)
 
    9. Langkah-langkah:
    * Untuk no 9 dapat digunakan ftp.request.command == USER || ftp.request.command == PASS, akan tetapi perlu diingat kalau ini tidak membaca localhost saja maka ditambah ip.addr = 127.0.0.1
