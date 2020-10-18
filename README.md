@@ -32,3 +32,6 @@ Kelompok C05
    3. [No 8](https://drive.google.com/file/d/1xZxjVNXoYEGc1beH0_JSTuD_CDVgDw2Q/view?usp=sharing)
 
 ## Jawaban
+   1. Gunakan http.host = "testing.mekanisme.me" dan gunakan follow HTTP stream dan dibaca servernya. Untuk Webservernnya digunakan nginx/1.14.0 Ubuntu
+   ![Picture1](https://user-images.githubusercontent.com/58687783/96362366-edd5bf00-1156-11eb-8de8-12cb31ce220d.png)
+   ![Picture2](https://user-images.githubusercontent.com/58687783/96362412-4dcc6580-1157-11eb-8997-b6e23f91d162.png)
