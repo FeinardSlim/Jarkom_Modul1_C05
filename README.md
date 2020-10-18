@@ -32,9 +32,15 @@ Kelompok C05
    3. [No 8](https://drive.google.com/file/d/1xZxjVNXoYEGc1beH0_JSTuD_CDVgDw2Q/view?usp=sharing)
 
 ## Jawaban
-   1. Gunakan http.host == "testing.mekanisme.me" dan gunakan follow HTTP stream dan dibaca servernya. Untuk Webservernnya digunakan nginx/1.14.0 Ubuntu.
+   1. Langkah-langkah:
+   * Gunakan http.host == "testing.mekanisme.me" 
+   
+   * Gunakan follow HTTP stream dan dibaca servernya
    
    ![1a](https://user-images.githubusercontent.com/58687783/96362366-edd5bf00-1156-11eb-8de8-12cb31ce220d.png)
+    
+   * Untuk Webservernnya digunakan nginx/1.14.0 Ubuntu.
+  
    ![1b](https://user-images.githubusercontent.com/58687783/96362412-4dcc6580-1157-11eb-8997-b6e23f91d162.png)
    
    2. Langkah-langkah:
@@ -53,7 +59,10 @@ Kelompok C05
 
 
    
-   3. Untuk no 3 digunakan  http.host == "ppid.dpr.go.id" && http.request.method == POST . Untuk Username 10pemuda dan passnya guncangdunia
+   3. Langkah-langkah:
+   * Gunakan  http.host == "ppid.dpr.go.id" && http.request.method == POST pada display filter. 
+   
+      Untuk Username 10pemuda dan passnya guncangdunia
    
    ![3a](https://user-images.githubusercontent.com/58687783/96362827-4e1a3000-115a-11eb-9950-b1f155b79187.png)
    
@@ -66,9 +75,13 @@ Langkah-langkah:
 
  Maka Wireshark akan menampikan paket dari web-web yang menggunakan basic authentication method!
    
-   5. Digunakan http.host == aku.pengen.pw, kemudian dibaca autorization dan credentialnya (ini juga dapat ditambah dengan http.authorization).Isi Credentialnya adalah kakakgamtenk:hartatahtabermuda. Setelah itu dibuka websitenya dan dimasukan credentialnya sebagai username dan passwordnya.
+   5. Langkah-langkah:
+   * Gunakan http.host == aku.pengen.pw pada display filter
    
    ![5a](https://user-images.githubusercontent.com/58687783/96362971-735b6e00-115b-11eb-8432-c545e5eaf1f6.png)
+   
+   * Kemudian dibaca autorization dan credentialnya (ini juga dapat ditambah dengan http.authorization).Isi Credentialnya adalah kakakgamtenk:hartatahtabermuda. Setelah itu dibuka websitenya dan dimasukan credentialnya sebagai username dan passwordnya.
+   
    ![5b](https://user-images.githubusercontent.com/58687783/96362944-3becc180-115b-11eb-8d31-84111a8548f3.png)
    
    6. **Wireshark Filter expression: ftp-data**
@@ -102,14 +115,22 @@ Langkah-langkah:
  
  ![image](https://user-images.githubusercontent.com/61129358/96362785-ee238980-1159-11eb-9142-21d64582562a.png)
  
-   7. Untuk no 7 digunakan frame contains “Yes.pdf” && ftp-data. Kemudian dilakukan follow tcp stream. Setelah didapatkan datanya, diubah menjadi raw dan disimpan sesuai dengan extensinya. Kemudian tinggal dibuka file didalamnya yang bernama Yes.pdf
-   
+
+   7. Langkah-langkah:
+   * Untuk no 7 digunakan frame contains “Yes.pdf” && ftp-data
+    
    ![9a](https://user-images.githubusercontent.com/58687783/96363022-d816c880-115b-11eb-8443-51cc39e1c0c2.png)
-   
+       
+   * Kemudian dilakukan follow tcp stream. 
+     
    ![9b](https://user-images.githubusercontent.com/58687783/96363064-1b713700-115c-11eb-966c-432257e0cc5e.png)
-   
+    
+   * Setelah didapatkan datanya, diubah menjadi raw dan disimpan sesuai dengan extensinya. Kemudian tinggal dibuka file didalamnya yang bernama Yes.pdf
+    
    ![9c](https://user-images.githubusercontent.com/58687783/96363069-21ffae80-115c-11eb-8cf6-54cfb96ff7e4.png)
-   
+    
+   * Berikut filenya:
+    
    ![9d](https://user-images.githubusercontent.com/58687783/96363073-26c46280-115c-11eb-9975-58d72f9ea982.png)
    
  
@@ -126,7 +147,8 @@ Langkah-langkah:
   
   ![image](https://user-images.githubusercontent.com/58687783/96363938-b3bdea80-1161-11eb-908d-3f2f9b579cc5.png)
 
-   9. Untuk no 9 dapat digunakan ftp.request.command == USER || ftp.request.command == PASS, akan tetapi perlu diingat kalau ini tidak membaca localhost saja maka ditambah ip.addr = 127.0.0.1
+   9. Langkah-langkah:
+   * Untuk no 9 dapat digunakan ftp.request.command == USER || ftp.request.command == PASS, akan tetapi perlu diingat kalau ini tidak membaca localhost saja maka ditambah ip.addr = 127.0.0.1
    
 ![9](https://user-images.githubusercontent.com/58687783/96363129-773bc000-115c-11eb-853f-b20bf787349d.png)
 
@@ -150,12 +172,16 @@ Langkah-langkah:
  
  ![image](https://user-images.githubusercontent.com/61129358/96362880-d26cb300-115a-11eb-8e0c-3db5dd5a4894.png)
    
-   11. Gunakan Port 21
-   
+   11. Langkah-langkah:
+ * Buka Wireshark, lalu masukkan src port 21 pada capture filter, pilih device yang sedang digunakan
+
    ![11a](https://user-images.githubusercontent.com/58687783/96363184-d7326680-115c-11eb-9227-d328a5b76725.png)
+   
+ * Berikut hasilnya:
+ 
    ![11b](https://user-images.githubusercontent.com/58687783/96363186-da2d5700-115c-11eb-9f9e-d645f94ef3e5.png)
    
-   12. **Wireshark capture-filter = src port 80**
+12. **Wireshark capture-filter = src port 80**
 
 Langkah-langkah:
  * Buka Wireshark, lalu masukkan src port 80 pada capture filter, pilih device yang sedang digunakan
@@ -168,10 +194,15 @@ Langkah-langkah:
  
  ![image](https://user-images.githubusercontent.com/61129358/96363015-cdf4ca00-115b-11eb-9ca5-654633856438.png)
  
- 13. Gunakan dst port 443
-   
+ 13. langkah-langkah:
+ Seperti nomer 11 & 12, hanya saja masukkan **dst port 443** pada capture filter
+  
+  ![image](https://user-images.githubusercontent.com/61129358/96363812-b3711f80-1160-11eb-82ac-dd45b08f0446.png)
+
+
    ![13](https://user-images.githubusercontent.com/58687783/96363209-0f39a980-115d-11eb-8921-0844d44e655f.png)
    
+  
 
 14. **Wireshark capture-filter = src host 192.168.0.106**
 
@@ -192,6 +223,9 @@ Langkah-langkah:
  
  ![image](https://user-images.githubusercontent.com/61129358/96363174-be29b580-115c-11eb-9ef6-f55a183e7602.png)
  
- 15.Gunakan dst host monta.if.its.ac.id
-   
+ 15. langkah-langkah:
+ Seperti nomer 11 & 12, hanya saja masukkan **dst host monta.if.its.ac.id** pada capture filter
+ 
+ ![image](https://user-images.githubusercontent.com/61129358/96363857-f9c67e80-1160-11eb-8e8a-d15ebf40c20b.png)
+ 
  ![15](https://user-images.githubusercontent.com/58687783/96363268-617aca80-115d-11eb-81ce-7654f95379e3.png)
