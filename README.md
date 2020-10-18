@@ -43,5 +43,29 @@ Kelompok C05
    
    5. Digunakan http.host == aku.pengen.pw, kemudian dibaca autorization dan credentialnya (ini juga dapat ditambah dengan http.authorization).Isi Credentialnya adalah kakakgamtenk:hartatahtabermuda. Setelah itu dibuka websitenya dan dimasukan credentialnya sebagai username dan passwordnya.
    
-   ![5a](https://user-images.githubusercontent.com/58687783/96362941-38593a80-115b-11eb-861d-44c4fd04e2f2.png)
+   ![5a](https://user-images.githubusercontent.com/58687783/96362971-735b6e00-115b-11eb-8432-c545e5eaf1f6.png)
    ![5b](https://user-images.githubusercontent.com/58687783/96362944-3becc180-115b-11eb-8d31-84111a8548f3.png)
+   
+   7. Untuk no 7 digunakan frame contains “Yes.pdf” && ftp-data. Kemudian dilakukan follow tcp stream. Setelah didapatkan datanya, diubah menjadi raw dan disimpan sesuai dengan extensinya. Kemudian tinggal dibuka file didalamnya yang bernama Yes.pdf
+   
+   ![9a](https://user-images.githubusercontent.com/58687783/96363022-d816c880-115b-11eb-8443-51cc39e1c0c2.png)
+   ![9b](https://user-images.githubusercontent.com/58687783/96363064-1b713700-115c-11eb-966c-432257e0cc5e.png)
+   ![9c](https://user-images.githubusercontent.com/58687783/96363069-21ffae80-115c-11eb-8cf6-54cfb96ff7e4.png)
+   ![9d](https://user-images.githubusercontent.com/58687783/96363073-26c46280-115c-11eb-9975-58d72f9ea982.png)
+
+   9. Untuk no 9 dapat digunakan ftp.request.command == USER || ftp.request.command == PASS, akan tetapi perlu diingat kalau ini tidak membaca localhost saja maka ditambah ip.addr = 127.0.0.1
+   
+![9](https://user-images.githubusercontent.com/58687783/96363129-773bc000-115c-11eb-853f-b20bf787349d.png)
+   
+   11. Gunakan Port 21
+   
+   ![11a](https://user-images.githubusercontent.com/58687783/96363184-d7326680-115c-11eb-9227-d328a5b76725.png)
+   ![11b](https://user-images.githubusercontent.com/58687783/96363186-da2d5700-115c-11eb-9f9e-d645f94ef3e5.png)
+
+   13. Gunakan dst port 443
+   
+   ![13](https://user-images.githubusercontent.com/58687783/96363209-0f39a980-115d-11eb-8921-0844d44e655f.png)
+   
+   15.Gunakan dst host monta.if.its.ac.id
+   
+   ![15](https://user-images.githubusercontent.com/58687783/96363268-617aca80-115d-11eb-81ce-7654f95379e3.png)
