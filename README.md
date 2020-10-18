@@ -174,7 +174,7 @@ Langkah-langkah:
  
    ![11b](https://user-images.githubusercontent.com/58687783/96363186-da2d5700-115c-11eb-9f9e-d645f94ef3e5.png)
    
-   12. **Wireshark capture-filter = src port 80**
+12. **Wireshark capture-filter = src port 80**
 
 Langkah-langkah:
  * Buka Wireshark, lalu masukkan src port 80 pada capture filter, pilih device yang sedang digunakan
