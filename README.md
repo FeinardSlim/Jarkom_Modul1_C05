@@ -37,9 +37,7 @@ Kelompok C05
    ![1a](https://user-images.githubusercontent.com/58687783/96362366-edd5bf00-1156-11eb-8de8-12cb31ce220d.png)
    ![1b](https://user-images.githubusercontent.com/58687783/96362412-4dcc6580-1157-11eb-8997-b6e23f91d162.png)
    
-   2. Simpan gambar "Tim_Kunjungan_Kerja_BAKN_DPR_RI_ke_Sukabumi141436.jpg"
-
-Langkah-langkah:
+   2. Langkah-langkah:
 
   * Buka file PCAP dengan wireshark, lalu klik file -> Export Object -> HTTP
   
@@ -59,9 +57,7 @@ Langkah-langkah:
    
    ![3a](https://user-images.githubusercontent.com/58687783/96362827-4e1a3000-115a-11eb-9950-b1f155b79187.png)
    
-   4. Temukan paket dari web-web yang menggunakan basic authentication method!
-
-**Wireshark Filter Expression: http.authbasic**
+   4. **Wireshark Filter Expression: http.authbasic**
 
 Langkah-langkah:
   * Buka file PCAP dengan wireshark, lalu masukkan http.authbasic pada display filter
@@ -75,9 +71,7 @@ Langkah-langkah:
    ![5a](https://user-images.githubusercontent.com/58687783/96362971-735b6e00-115b-11eb-8432-c545e5eaf1f6.png)
    ![5b](https://user-images.githubusercontent.com/58687783/96362944-3becc180-115b-11eb-8d31-84111a8548f3.png)
    
-   6. Seseorang menyimpan file zip melalui FTP dengan nama "Answer.zip". Simpan dan Buka file "Open This.pdf" di Answer.zip. Untuk mendapatkan password zipnya, temukan dalam file zipkey.txt (passwordnya adalah isi dari file txt tersebut).
-
-**Wireshark Filter expression: ftp-data**
+   6. **Wireshark Filter expression: ftp-data**
 
 **Wireshark string search : Answer.zip**
 
@@ -100,11 +94,18 @@ Langkah-langkah:
  
  ![image](https://user-images.githubusercontent.com/61129358/96362785-ee238980-1159-11eb-9142-21d64582562a.png)
  
- 8. Cari objek apa saja yang didownload (RETR) dari koneksi FTP dengan Microsoft FTP Service!
-
-**Wireshark Filter Expression: ftp.request.command == RETR**
-
-Langkah-langkah:
+    7. Untuk no 7 digunakan frame contains “Yes.pdf” && ftp-data. Kemudian dilakukan follow tcp stream. Setelah didapatkan datanya, diubah menjadi raw dan disimpan sesuai dengan extensinya. Kemudian tinggal dibuka file didalamnya yang bernama Yes.pdf
+   
+   ![9a](https://user-images.githubusercontent.com/58687783/96363022-d816c880-115b-11eb-8443-51cc39e1c0c2.png)
+   
+   ![9b](https://user-images.githubusercontent.com/58687783/96363064-1b713700-115c-11eb-966c-432257e0cc5e.png)
+   
+   ![9c](https://user-images.githubusercontent.com/58687783/96363069-21ffae80-115c-11eb-8cf6-54cfb96ff7e4.png)
+   
+   ![9d](https://user-images.githubusercontent.com/58687783/96363073-26c46280-115c-11eb-9975-58d72f9ea982.png)
+   
+ 
+ 8. Langkah-langkah:
  * Buka file PCAP dengan wireshark, lalu masukkan Wireshark Filter Expression: ftp.request.command == RETR pada display filter
  
 ![image](https://user-images.githubusercontent.com/61129358/96362820-3e025080-115a-11eb-8b51-6edf7aec9076.png)
@@ -117,19 +118,13 @@ Langkah-langkah:
  
 ![image](https://user-images.githubusercontent.com/61129358/96362824-45295e80-115a-11eb-96fa-116f2d3e6f24.png)
    
-   7. Untuk no 7 digunakan frame contains “Yes.pdf” && ftp-data. Kemudian dilakukan follow tcp stream. Setelah didapatkan datanya, diubah menjadi raw dan disimpan sesuai dengan extensinya. Kemudian tinggal dibuka file didalamnya yang bernama Yes.pdf
-   
-   ![9a](https://user-images.githubusercontent.com/58687783/96363022-d816c880-115b-11eb-8443-51cc39e1c0c2.png)
-   ![9b](https://user-images.githubusercontent.com/58687783/96363064-1b713700-115c-11eb-966c-432257e0cc5e.png)
-   ![9c](https://user-images.githubusercontent.com/58687783/96363069-21ffae80-115c-11eb-8cf6-54cfb96ff7e4.png)
-   ![9d](https://user-images.githubusercontent.com/58687783/96363073-26c46280-115c-11eb-9975-58d72f9ea982.png)
+
 
    9. Untuk no 9 dapat digunakan ftp.request.command == USER || ftp.request.command == PASS, akan tetapi perlu diingat kalau ini tidak membaca localhost saja maka ditambah ip.addr = 127.0.0.1
    
 ![9](https://user-images.githubusercontent.com/58687783/96363129-773bc000-115c-11eb-853f-b20bf787349d.png)
 
-10.  Cari file .pdf di wireshark lalu download dan buka file tersebut! clue: "25 50 44 46" 
-**Wireshark hex value finder = 25 50 44 46**
+10. **Wireshark hex value finder = 25 50 44 46**
 
 Langkah-langkah:
  * Buka file PCAP dengan wireshark, lalu dengan menggunkan hex value finder, masukkan 25 50 44 46, lalu tekan find. Klik kanan pada  paket yang ditemukan, lalu pilih follow TCP Stream
@@ -154,8 +149,7 @@ Langkah-langkah:
    ![11a](https://user-images.githubusercontent.com/58687783/96363184-d7326680-115c-11eb-9227-d328a5b76725.png)
    ![11b](https://user-images.githubusercontent.com/58687783/96363186-da2d5700-115c-11eb-9f9e-d645f94ef3e5.png)
    
-   12. Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80!
-**Wireshark capture-filter = src port 80**
+   12. **Wireshark capture-filter = src port 80**
 
 Langkah-langkah:
  * Buka Wireshark, lalu masukkan src port 80 pada capture filter, pilih device yang sedang digunakan
@@ -167,10 +161,13 @@ Langkah-langkah:
  (kosong karena port 80 merupakan http, dan posisi sedang tidak membuka web apapun)
  
  ![image](https://user-images.githubusercontent.com/61129358/96363015-cdf4ca00-115b-11eb-9ca5-654633856438.png)
+ 
+ 13. Gunakan dst port 443
+   
+   ![13](https://user-images.githubusercontent.com/58687783/96363209-0f39a980-115d-11eb-8921-0844d44e655f.png)
+   
 
-14. Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!
-
-**Wireshark capture-filter = src host 192.168.0.106**
+14. **Wireshark capture-filter = src host 192.168.0.106**
 
 Langkah-langkah:
  * gunakan command ipconfig pada cmd untuk mencari ip sendiri
@@ -189,12 +186,6 @@ Langkah-langkah:
  
  ![image](https://user-images.githubusercontent.com/61129358/96363174-be29b580-115c-11eb-9ef6-f55a183e7602.png)
  
- 
-
-   13. Gunakan dst port 443
+ 15.Gunakan dst host monta.if.its.ac.id
    
-   ![13](https://user-images.githubusercontent.com/58687783/96363209-0f39a980-115d-11eb-8921-0844d44e655f.png)
-   
-   15.Gunakan dst host monta.if.its.ac.id
-   
-   ![15](https://user-images.githubusercontent.com/58687783/96363268-617aca80-115d-11eb-81ce-7654f95379e3.png)
+ ![15](https://user-images.githubusercontent.com/58687783/96363268-617aca80-115d-11eb-81ce-7654f95379e3.png)
