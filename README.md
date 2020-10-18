@@ -32,7 +32,16 @@ Kelompok C05
    3. [No 8](https://drive.google.com/file/d/1xZxjVNXoYEGc1beH0_JSTuD_CDVgDw2Q/view?usp=sharing)
 
 ## Jawaban
-   1. Gunakan http.host = "testing.mekanisme.me" dan gunakan follow HTTP stream dan dibaca servernya. Untuk Webservernnya digunakan nginx/1.14.0 Ubuntu.
+   1. Gunakan http.host == "testing.mekanisme.me" dan gunakan follow HTTP stream dan dibaca servernya. Untuk Webservernnya digunakan nginx/1.14.0 Ubuntu.
    
-   ![Picture1](https://user-images.githubusercontent.com/58687783/96362366-edd5bf00-1156-11eb-8de8-12cb31ce220d.png)
-   ![Picture2](https://user-images.githubusercontent.com/58687783/96362412-4dcc6580-1157-11eb-8997-b6e23f91d162.png)
+   ![1a](https://user-images.githubusercontent.com/58687783/96362366-edd5bf00-1156-11eb-8de8-12cb31ce220d.png)
+   ![1b](https://user-images.githubusercontent.com/58687783/96362412-4dcc6580-1157-11eb-8997-b6e23f91d162.png)
+   
+   3. Untuk no 3 digunakan  http.host == "ppid.dpr.go.id" && http.request.method == POST . Untuk Username 10pemuda dan passnya guncangdunia
+   
+   ![3a](https://user-images.githubusercontent.com/58687783/96362827-4e1a3000-115a-11eb-9950-b1f155b79187.png)
+   
+   5. Digunakan http.host == aku.pengen.pw, kemudian dibaca autorization dan credentialnya (ini juga dapat ditambah dengan http.authorization).Isi Credentialnya adalah kakakgamtenk:hartatahtabermuda. Setelah itu dibuka websitenya dan dimasukan credentialnya sebagai username dan passwordnya.
+   
+   ![5a](https://user-images.githubusercontent.com/58687783/96362941-38593a80-115b-11eb-861d-44c4fd04e2f2.png)
+   ![5b](https://user-images.githubusercontent.com/58687783/96362944-3becc180-115b-11eb-8d31-84111a8548f3.png)
