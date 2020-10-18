@@ -26,9 +26,9 @@ Kelompok C05
    15. Filter sehingga wireshark hanya mengambil paket yang tujuannya ke monta.if.its.ac.id!
    
 ### Tambahan File dari Soal
-    Untuk File no 1-10 dapat didownload di link dibawah ini:
-    [a link](https://drive.google.com/file/d/17X8b4xqRDs0S_Z1rT08s-cNETpAQkBrY/view?usp=sharing)
-    [a link](https://drive.google.com/file/d/1JTwaABD7oujbnc6jH-Zj4HibGaVGAOFV/view?usp=sharing)
-    [a link](https://drive.google.com/file/d/1xZxjVNXoYEGc1beH0_JSTuD_CDVgDw2Q/view?usp=sharing)
+   Untuk File no 1-10 dapat didownload di link dibawah ini:
+   [No 1-5,10](https://drive.google.com/file/d/17X8b4xqRDs0S_Z1rT08s-cNETpAQkBrY/view?usp=sharing)
+   [No 6,7,9](https://drive.google.com/file/d/1JTwaABD7oujbnc6jH-Zj4HibGaVGAOFV/view?usp=sharing)
+   [No 8](https://drive.google.com/file/d/1xZxjVNXoYEGc1beH0_JSTuD_CDVgDw2Q/view?usp=sharing)
 
 ## Jawaban
