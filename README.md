@@ -36,9 +36,11 @@ Kelompok C05
    
    ![1a](https://user-images.githubusercontent.com/58687783/96362366-edd5bf00-1156-11eb-8de8-12cb31ce220d.png)
    ![1b](https://user-images.githubusercontent.com/58687783/96362412-4dcc6580-1157-11eb-8997-b6e23f91d162.png)
+   
    2. Simpan gambar "Tim_Kunjungan_Kerja_BAKN_DPR_RI_ke_Sukabumi141436.jpg"
 
 Langkah-langkah:
+
   * Buka file PCAP dengan wireshark, lalu klik file -> Export Object -> HTTP
   
 ![image](https://user-images.githubusercontent.com/61129358/96362420-63da2600-1157-11eb-8530-a391d930f320.png)
