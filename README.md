@@ -37,7 +37,7 @@ Kelompok C05
    
    * Gunakan follow HTTP stream dan dibaca servernya
    
-    ![1a](https://user-images.githubusercontent.com/58687783/96362366-edd5bf00-1156-11eb-8de8-12cb31ce220d.png)
+   ![1a](https://user-images.githubusercontent.com/58687783/96362366-edd5bf00-1156-11eb-8de8-12cb31ce220d.png)
     
    * Untuk Webservernnya digunakan nginx/1.14.0 Ubuntu.
   
@@ -107,20 +107,20 @@ Langkah-langkah:
  
  ![image](https://user-images.githubusercontent.com/61129358/96362785-ee238980-1159-11eb-9142-21d64582562a.png)
  
-    7. Langkah-langkah:
-    * Untuk no 7 digunakan frame contains “Yes.pdf” && ftp-data
+   7. Langkah-langkah:
+   * Untuk no 7 digunakan frame contains “Yes.pdf” && ftp-data
     
-       ![9a](https://user-images.githubusercontent.com/58687783/96363022-d816c880-115b-11eb-8443-51cc39e1c0c2.png)
+   ![9a](https://user-images.githubusercontent.com/58687783/96363022-d816c880-115b-11eb-8443-51cc39e1c0c2.png)
        
-    * Kemudian dilakukan follow tcp stream. 
+   * Kemudian dilakukan follow tcp stream. 
      
    ![9b](https://user-images.githubusercontent.com/58687783/96363064-1b713700-115c-11eb-966c-432257e0cc5e.png)
     
-    * Setelah didapatkan datanya, diubah menjadi raw dan disimpan sesuai dengan extensinya. Kemudian tinggal dibuka file didalamnya yang bernama Yes.pdf
+   * Setelah didapatkan datanya, diubah menjadi raw dan disimpan sesuai dengan extensinya. Kemudian tinggal dibuka file didalamnya yang bernama Yes.pdf
     
-       ![9c](https://user-images.githubusercontent.com/58687783/96363069-21ffae80-115c-11eb-8cf6-54cfb96ff7e4.png)
+   ![9c](https://user-images.githubusercontent.com/58687783/96363069-21ffae80-115c-11eb-8cf6-54cfb96ff7e4.png)
     
-    * Berikut filenya:
+   * Berikut filenya:
     
    ![9d](https://user-images.githubusercontent.com/58687783/96363073-26c46280-115c-11eb-9975-58d72f9ea982.png)
    
